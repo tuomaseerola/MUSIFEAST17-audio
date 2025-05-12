@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 4200
+    browser: true
+    navigate: true
+
+website:
+  title: "MUSIFEAST17-audio"
+  description: "Audio features for MUSIFEAST17 dataset extracted with MIR Toolbox"
+  repo-url: https://github.com/tuomaseerola/MUSIFEAST17-audio/
+#  repo-actions: [source, edit, issue]
+  site-url: "https://tuomaseerola.github.io/MUSIFEAST17-audio/"
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+#        text: Home
+      - icon: github
+        href: https://github.com/tuomaseerola/MUSIFEAST17-audio/
+        aria-label: GitHub
+  page-navigation: true
+  back-to-top-navigation: true
+#  sidebar:
+#    - title: "Home"
+#      style: "floating"
+#      collapse-level: 3
+#      align: left
+#      contents: 
+#          - text: "Home"
+#            href: index.qmd
+#          - section: "Analysis"
+#            contents:
+#                - item_analysis.qmd
+#                - expert_eval_round1.qmd
+#                - expert_eval_round2.qmd
+#                - expert_eval_round2_repr.qmd
+  page-footer: 
+    right: 
+      - icon: github
+        href: https://github.com/tuomaseerola/
+format:
+  html:
+    theme: pulse # zephyr, lumen, pulse, materia, yeti, zephyr
+    css: styles.css
+    toc: true
+    page-layout: full
